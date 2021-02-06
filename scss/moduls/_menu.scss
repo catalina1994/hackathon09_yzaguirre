@@ -1,0 +1,24 @@
+.menu{
+    display: flex;
+    font-size: $font-size-small;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: .7em;
+    border-bottom: 1px solid $color-secundary;
+    li{
+        margin-bottom: .5em;
+        
+    }
+    a{
+        color: grey;
+        &:hover{
+            text-decoration: underline;
+            color: $color-secundary;
+        }
+        &::after{
+            content: ' / ';
+            display: inline-block;
+            margin: 0 .5em;
+        }
+    }
+}

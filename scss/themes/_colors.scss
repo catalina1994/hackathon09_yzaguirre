@@ -1,0 +1,16 @@
+.principal{
+    &-color{
+        color: $color-principal;
+    }
+    &-backgroud{
+        background-color: $color-principal;
+    }
+}
+.secundary{
+    &-color{
+        color: $color-secundary;
+    }
+    &-backgroud{
+        background-color: $color-secundary;
+    }
+}

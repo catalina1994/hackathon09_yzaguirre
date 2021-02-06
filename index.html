@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon 09</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="banner">
+        <h2 class="banner__caption">Hackathon 09</h2>
+    </div>
+    <nav class="container py-1">
+        <h3 class="pb-1 text-center  ">Indice</h3>
+        <article >
+            <ul class=" menu">
+                <li><a href="#ejercicio1">Ejercicio 1</a></li>
+                <li><a href="#ejercicio2">Ejercicio 2</a></li>
+                <li><a href="#ejercicio3">Ejercicio 3</a></li>
+                <li><a href="#ejercicio4">Ejercicio 4</a></li>
+                <li><a href="#ejercicio5">Ejercicio 5</a></li>
+                <li><a href="#ejercicio6">Ejercicio 6</a></li>
+                <li><a href="#ejercicio7">Ejercicio 7</a></li>
+                <li><a href="#ejercicio8">Ejercicio 8</a></li>
+                <li><a href="#ejercicio9">Ejercicio 9</a></li>
+                <li><a href="#ejercicio10">Ejercicio 10</a></li>
+                <li><a href="#ejercicio11">Ejercicio 11</a></li>
+                <li><a href="#ejercicio12">Ejercicio 12</a></li>
+                <li><a href="#ejercicio13">Ejercicio 13</a></li>
+                <li><a href="#ejercicio14">Ejercicio 14</a></li>
+                <li><a href="#ejercicio15">Ejercicio 15</a></li>
+            </ul>
+        </article>
+    </nav>
+    <div class="container">
+        <section class="my-2">
+            <h2 class="mb-1 secundary-color">Reto 2</h2>
+            <h3 class="mb-1">Ejecicios de lagoritmos</h3>
+            <section>
+                <article class="card" id="ejercicio1">
+                    <h4 class="card__title">Implementar un algoritmo que reciba 2 argumentos y los sume, el resultado se
+                        deberá imprimir en pantalla</h4>
+                    <pre><code>
+   const sumaNumber = function(number1, number2){
+        let sumarTo =  number1 + number2
+        return console.log(  `La suma de ${number1} y ${number2} es igual a ${sumarTo}`)
+    }
+   sumaNumber(5,45)
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio2">
+                    <h4 class="card__title">Un estudiante realiza 4 exámenes, calcular el promedio de estos</h4>
+                    <pre><code>
+    const promedioNotas =function(nota1, nota2,nota3, nota4){
+          let promedioTo = (nota1 + nota2 + nota3 + nota4) / 4
+          return console.log(`El promedio del alumno es igual a ${promedioTo}`)
+    }
+    promedioNotas( 18, 14, 15 ,11)
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio3">
+                    <h4 class="card__title">Calcular el área de un rectángulo</h4>
+                    <pre><code>
+     const areaRectandulo = function(base, altura){
+    let areaRec = (base * altura) 
+        return console.log(`El área de este rectangulo es igual a ${areaRec}cm `)
+        }
+    areaRectandulo( 15, 10)
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio4">
+                    <h4 class="card__title">Calcular el área de un triángulo</h4>
+                    <pre><code>
+    const areaTriangulo = function(base, altura){
+        let areaTri = (base * altura) / 2
+        return console.log(`El área de este triangulo es igual a ${areaTri}cm`)
+    }
+    areaTriangulo( 8, 12)
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio5">
+                    <h4 class="card__title">Calcular el área de una circunferencia</h4>
+                    <pre><code>
+    const areaCircunferencia = function(radio){
+        let areaCir = (3.1416 * (Math.pow(radio,2))) 
+        return console.log(`El área de esta circunferencia es igual a ${areaCir} metros cuadrados`)
+    }
+    areaCircunferencia(8)
+                    </code></pre>
+                </article>
+                <article class="card" id="ejercicio6">
+                    <h4 class="card__title">Determinar el sueldo semanal de un trabajador basándose en sus horas
+                        trabajadas y su salario de hora hombre</h4>
+    <pre><code>
+        const sueldoSemanal = function(salarioHora, horasTrabajadas){
+            let sueldoSemanalTo = salarioHora * horasTrabajadas
+            return console.log(`El sueldo semanal de un hombre es igual a ${sueldoSemanalTo} soles`)
+        }
+        sueldoSemanal(40,48)
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio7">
+                    <h4 class="card__title">Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero.
+                        Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas,
+                        pero ella generalmente las tiene en metros. Realice un algoritmo para ayudar a
+                        resolver el problema, determinando cuantas pulgadas debe pedir con base en
+                        los metros que requiere. Represéntelo mediante el diagrama de flujo y el
+                        pseudocódigo (1 pulgada = 0.0254 m).</h4>
+    <pre><code>
+        const convertorPulgadas = function( cantMetros){
+            let convertor = Math.round(cantMetros / 0.0254)
+            return console.log(`Debe pedir ${convertor} pulgadas de tela.`)
+        }
+        convertorPulgadas(100) 
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio8">
+                    <h4 class="card__title">Una empresa importadora desea determinar cuántos dólares puede adquirir
+                        con equis cantidad de dinero peruano</h4>
+    <pre><code>
+        const convertorDollar = function(cantSoles, precioDollar){
+            let convertor = (cantSoles / precioDollar)
+            return console.log(`Con ${cantSoles} soles puede adquirir ${convertor.toFixed(2)} dolares.`)
+        }
+        convertorDollar(1000, 3.62) 
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio9">
+                    <h4 class="card__title">Una empresa que contrata personal requiere determinar la edad de las
+                        personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se
+                        les pregunta el año en que nacieron</h4>
+    <pre><code>
+        const agePostulante = function(yearNacimento){
+            let yearActual = 2021
+            let agePostulateTo = yearActual - yearNacimento
+            return console.log(`La edad del postulante es de ${agePostulateTo} años.`)
+        }
+        agePostulante(1998) 
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio10">
+                    <h4 class="card__title">Se tiene el nombre y la edad de tres personas. Se desea saber el nombre y la
+                        edad de la persona de menor edad</h4>
+    <pre><code>
+        let users = [
+        {
+            name: 'Paty', age :24,
+        },
+        {
+            name: 'Gloria', age :40,
+        },
+        {
+            name: 'Ursula',age :20,
+        }
+      ]
+    users.forEach( user => {
+        userMin = user.age
+    })
+    console.log(Array.from(userMin)) 
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio11">
+                    <h4 class="card__title">Se les dará un bono por antigüedad a los empleados de una tienda. Si tienen un
+                        año, se les dará $100; si tienen 2 años, $200, y así sucesivamente hasta los 5
+                        años. Para los que tengan más de 5, el bono será de $1000. Realice un algoritmo
+                        y represéntelo ,que permita determinar el bono que recibirá un trabajador</h4>
+    <pre><code>
+        const bono = function(yearsAntiguedad){
+            let mensaje = `Tienes ${yearsAntiguedad} años resiviras $${yearsAntiguedad}00 dolares.`
+            if (yearsAntiguedad == 1){
+                return console.log(mensaje)
+            }
+            if (yearsAntiguedad == 2){
+              return console.log(mensaje)
+            }
+            if(yearsAntiguedad >= 5){
+              return console.log(`Tienes ${yearsAntiguedad} años resiviras $1000 dolar`)
+            }
+        }
+        bono(8)
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio12">
+                    <h4 class="card__title">Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10 % anual
+                        durante 6 años. ¿Cuál es su salario al cabo de 6 años? ¿Qué salario ha recibido
+                        en cada uno de los 6 años? Realice el algoritmo y representan la solución,
+                        utilizando el ciclo apropiado</h4>
+    <pre><code>
+        let salario = 1500,
+        incremento = 0.1;
+
+        for(let i=1; i < 7; i++ ){
+            salario = salario + (salario* incremento)
+            console.log(`El salario en el año ${i} es $${salario.toFixed(2)} dolares`)
+        }
+        console.log(`El salario dentro de 6 años sera de $${salario.toFixed(2)} dolares`)
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio13">
+                    <h4 class="card__title">Realice un algoritmo para leer las calificaciones de N alumnos y determine el
+                        número de aprobados y reprobados</h4>
+    <pre><code>
+    let desAprob =0,
+        Aprob =0;
+    let calificaiones = [ 14, 08, 10, 20,17 , 16, 14, 02, 01, 18, 13];
+    
+        calificaiones.forEach(nota => {
+        if(nota < 11 ){
+            desAprob = desAprob +1
+        }else{
+            Aprob =Aprob +1
+        }
+        });
+        
+    console.log(`De ${calificaiones.length} alumnos Hay ${desAprob} desaprobados y ${Aprob} aprobados`)
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio14">
+                    <h4 class="card__title">Una compañía, fabrica focos de colores (verdes, blancos y rojos). Se desea
+                        contabilizar, de un lote de N focos, el número de focos de cada color que hay en
+                        existencia</h4>
+    <pre><code>
+    let focosTotal = [ 'rojo', 'rojo','rojo','blanco', 'verde','rojo','blanco', 'verde', 'rojo','blanco','verde' ]
+    let focoVerdes = 0,
+        focoBlanco = 0,
+        focoRojo = 0;
+        
+    focosTotal.forEach(foco=>{
+            if(foco === 'rojo'){
+                focoRojo =focoRojo +1
+            }
+            if(foco === 'verde'){
+                focoVerdes =focoVerdes +1
+            }
+            if(foco === 'blanco'){
+                focoBlanco =focoBlanco +1
+            }
+    });
+    console.log(`De ${focosTotal.length} focos hay: ${focoVerdes} focos verdes, ${focoRojo} focos rojos y 
+    ${focoBlanco} focos blancos`)        
+    </code></pre>
+                </article>
+                <article class="card" id="ejercicio15">
+                    <h4 class="card__title">Realice un algoritmo para determinar si una persona puede votar con base en
+                        su edad en las próximas elecciones</h4>
+<pre><code>
+    const votacion = function (agePerson){
+        if(agePerson >= 18){
+            console.log( `Usted SI puede votar por que tiene ${agePerson} años`)
+        }else{
+           console.log( `Usted NO puede votar por que tiene ${agePerson} años`)
+        }
+    }
+    votacion(28);
+</code></pre>
+                </article>
+                
+            </section>
+        </section>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
